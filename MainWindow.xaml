@@ -1,0 +1,22 @@
+﻿<Window x:Class="WPF_PR10_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_PR10_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="325" Width="815">
+    <Grid>
+        <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="305,10,0,0" Height="269" VerticalAlignment="Top" IsReadOnly="True" HorizontalAlignment="Left" Width="500"/>
+        <GroupBox x:Name="groupBox" Header="Панель управления" Margin="0,10,0,0" Height="269" VerticalAlignment="Top" HorizontalAlignment="Left" Width="295">
+            <Grid>
+                <Button x:Name="button" Content="Найти" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Click="ToFind_Click" Width="60" FontSize="14" Height="30"/>
+                <Label x:Name="label" Content="Результат:" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Width="74" FontSize="14" Height="30"/>
+                <TextBox x:Name="textBoxresult" HorizontalAlignment="Center" Margin="0,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="14" Height="117"/>
+                <Button x:Name="button1" Content="О программе" HorizontalAlignment="Left" Margin="10,194,0,0" VerticalAlignment="Top" FontSize="14" Width="120" Height="30"/>
+                <Button x:Name="button2" Content="Выход" Margin="213,194,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60" FontSize="14" Height="30"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>
