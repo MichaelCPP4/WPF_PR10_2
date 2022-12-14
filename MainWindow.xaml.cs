@@ -77,5 +77,15 @@ namespace WPF_PR10_2
                 }
             }
         }
+
+        private void ButtonInfo_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Задача:\r\nВ первом одномерном массиве хранятся затраты на производство продуктов, во\r\nвтором — цены на эти продукты. Указать номер первого продукта, затраты на\r\nпроизводство которого превышают цены.\r\nВыполнил Иванов Михаил ИСП-31", "О программе");
+        }
+
+        private void ButtonExit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
